@@ -12,8 +12,8 @@ async function alts<T>(...chs: Channel<T>[]): Promise<T> {
     removeLosersRacersFromTheirChannels(losersChannels);
 
     winningChannel.unwaitOldestPutter();
-    // const msg = winningChannel.retrieveOldestMessage()
-    return msg;
+    const msg = winningChannel.retrieveOldestMessage()
+    return false;
 }
 
 async function select<T>(selectable: Selectable<T>): Promise<[any, T]> {
