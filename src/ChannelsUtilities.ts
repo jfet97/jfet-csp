@@ -12,7 +12,7 @@ async function alts<T>(...chs: Channel<T>[]): Promise<T> {
     removeLosersRacersFromTheirChannels(losersChannels);
 
     winningChannel.unwaitOldestPutter();
-    const msg = winningChannel.retrieveOldestMessage()
+    // const msg = winningChannel.retrieveOldestMessage()
     return msg;
 }
 
